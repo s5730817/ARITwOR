@@ -1,0 +1,130 @@
+/* Main container */
+.ar-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-height: 100vh;   /* allows scrolling if needed */
+}
+
+/* Camera area */
+.camera-container
+{
+    position: relative;
+
+    width: 100%;
+    max-width: 600px;
+
+    height: 70vh; /* camera takes most of screen */
+
+    border: 2px solid #333;
+    overflow: hidden;
+}
+
+/* Video feed */
+.camera-feed
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capture-btn
+{
+    position: relative;
+
+    margin: 20px auto;   /* 👈 THIS centers it */
+
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+
+    background: white;
+    border: 5px solid rgba(255,255,255,0.7);
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+/* Hidden canvas */
+.hidden-canvas
+{
+    display: none;
+}
+
+/* Preview container BELOW camera */
+.preview-container
+{
+    width: 100%;
+    max-width: 600px;
+
+    margin-top: -20px;   
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* Row for thumbnails */
+.preview-row
+{
+    display: flex;
+    gap: 10px;
+}
+
+/* Thumbnail images */
+.preview-image
+{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Temp preview overlay (inside camera only) */
+.temp-preview
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.9);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 10;
+}
+
+/* Temp image */
+.temp-preview img
+{
+    max-width: 90%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+/* Keep / discard buttons */
+.temp-controls
+{
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+}
+.upload-btn
+{
+    margin-top: 10px;
+    padding: 10px 15px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #333;
+    color: white;
+    cursor: pointer;
+}
