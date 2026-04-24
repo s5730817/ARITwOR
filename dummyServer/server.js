@@ -1,6 +1,9 @@
 import express from "express";
 import cors from "cors";
-import uploadRoutes from "./routes/upload.js";
+
+import featureMapRoutes from "./routes/featureMaps.js";
+import annotationRoutes from "./routes/annotations.js";
+import inspectionRoutes from "./routes/inspections.js";
 
 const app = express();
 const PORT = 5000;
@@ -8,7 +11,14 @@ const PORT = 5000;
 app.use(cors());
 app.use(express.json());
 
-app.use("/api", uploadRoutes);
+// feature map routes (ALL in one file now)
+app.use("/api/featureMaps", featureMapRoutes);
+
+// annotation routes
+app.use("/api/annotations", annotationRoutes);
+
+// inspection routes
+app.use("/api/inspections", inspectionRoutes);
 
 app.get("/", (req, res) => {
   res.send("Backend is running");

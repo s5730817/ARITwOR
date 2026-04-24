@@ -1,0 +1,34 @@
+{
+  "id": "17107bca-ca8d-4f44-b655-8704f8a8536b",
+  "featureMapId": "fm_f9f60ba2-87b9-4391-9907-4699a0ab83bd",
+  "entityId": null,
+  "createdAt": "2026-04-24T07:41:12.529Z",
+  "updatedAt": "2026-04-24T07:41:12.171Z",
+  "annotationCount": 2,
+  "annotations": [
+    {
+      "id": 1777016429409,
+      "mapX": 576.6762142736865,
+      "mapY": 936.2989386281341,
+      "featureId": "d_1736",
+      "offsetX": 17.95618253540522,
+      "offsetY": -14.101085785928376,
+      "title": "Test 1",
+      "note": "Note 1",
+      "done": true,
+      "colour": "#00ff88"
+    },
+    {
+      "id": 1777016441123,
+      "mapX": 493.6219660828304,
+      "mapY": 740.1486202772261,
+      "featureId": "d_2031",
+      "offsetX": -9.378033917169603,
+      "offsetY": 13.148620277226087,
+      "title": "Test 2",
+      "note": "Note 2",
+      "done": true,
+      "colour": "#ff9f1c"
+    }
+  ]
+}

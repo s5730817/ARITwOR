@@ -1,0 +1,179 @@
+/* CONTAINER */
+.inspection-mode .inspection-container {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* GROUP */
+.inspection-mode .inspection-box-group {
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.inspection-mode .group-header {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.inspection-mode .empty {
+  color: #888;
+  font-size: 14px;
+}
+
+/* LIST ITEMS */
+.inspection-mode .list-item {
+  width: 100%;
+  text-align: left;
+  padding: 12px;
+  margin-bottom: 8px;
+
+  background: #1a1a1a;
+  color: #fff;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.inspection-mode .list-item:last-child {
+  margin-bottom: 0;
+}
+
+.inspection-mode .list-item.checked {
+  background: #13261d;
+  border-color: rgba(0, 255, 136, 0.2);
+}
+
+.inspection-mode .list-item.fault {
+  background: #2a1414;
+  border-color: rgba(255, 59, 59, 0.2);
+}
+
+/* BACK BUTTON */
+.inspection-mode .back {
+  align-self: flex-start;
+
+  border: none;
+  border-radius: 10px;
+  padding: 10px 12px;
+
+  background: #fff;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* CARD */
+.inspection-mode .card {
+  background: #141414;
+  border-radius: 12px;
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* LABEL */
+.inspection-mode .label {
+  font-size: 11px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+/* TEXT */
+.inspection-mode .readonly {
+  color: #eee;
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+/* INPUTS */
+.inspection-mode input,
+.inspection-mode textarea {
+  width: 100%;
+  box-sizing: border-box;
+
+  background: #1a1a1a;
+  color: #fff;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+
+  padding: 12px;
+  font-size: 14px;
+}
+
+.inspection-mode textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+/* RESULT TOGGLE */
+.inspection-mode .result-toggle {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.inspection-mode .result-toggle button {
+  flex: 1;
+  padding: 10px;
+
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  background: #1a1a1a;
+  color: #ccc;
+
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.inspection-mode .result-toggle button.active {
+  font-weight: 700;
+  color: #000;
+}
+
+/* Functional */
+.inspection-mode .result-toggle button.active:first-child {
+  background: #00ff88;
+  border-color: #00ff88;
+}
+
+/* Defective */
+.inspection-mode .result-toggle button.active:last-child {
+  background: #ff3b3b;
+  border-color: #ff3b3b;
+}
+
+/* ACTION BUTTONS */
+.inspection-mode .action {
+  width: 100%;
+  padding: 12px;
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.inspection-mode .action.complete {
+  background: #00ff88;
+  color: #000;
+}
+
+.inspection-mode .action.delete {
+  background: #ff3b3b;
+  color: #fff;
+}

@@ -1,0 +1,149 @@
+.ar-annotation-container {
+  position: relative;
+  width: 100vw;
+  height: 100dvh;
+  overflow: hidden;
+  background: #000;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* ------------------ */
+/* CAMERA AREA        */
+/* ------------------ */
+.camera-wrapper {
+  position: relative;
+  width: 100%;
+  height: 58%;
+  min-height: 0;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.camera-feed {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  z-index: 0;
+}
+
+/* ------------------ */
+/* BOTTOM UI AREA     */
+/* ------------------ */
+.ui-layer {
+  position: relative;
+  width: 100%;
+  height: 42%;
+  min-height: 0;
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  background: rgba(10, 10, 10, 0.96);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ------------------ */
+/* SAVE BUTTON        */
+/* ------------------ */
+.save-button {
+  width: calc(100% - 24px);
+  margin: 10px 12px 12px 12px;
+
+  height: 52px;
+  min-height: 52px;
+  flex-shrink: 0;
+
+  border: none;
+  border-radius: 14px;
+
+  background: #00c2ff;
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.28);
+}
+
+.save-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ------------------ */
+/* SAVE STATUS        */
+/* ------------------ */
+.save-status {
+  margin: 0 12px 8px 12px;
+  flex-shrink: 0;
+
+  padding: 10px 12px;
+  border-radius: 12px;
+
+  text-align: center;
+
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+
+  background: rgba(0, 0, 0, 0.68);
+}
+
+/* ------------------ */
+/* DEBUG STATUS       */
+/* ------------------ */
+.debug-overlay {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+
+  z-index: 300;
+
+  background: rgba(0, 0, 0, 0.72);
+  color: #00ffff;
+
+  padding: 8px 12px;
+  border-radius: 10px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  max-width: 70%;
+}
+
+/* ------------------ */
+/* BACK BUTTON        */
+/* ------------------ */
+.back-button {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  z-index: 300;
+
+  border: none;
+  border-radius: 10px;
+
+  padding: 10px 14px;
+
+  background: rgba(255, 255, 255, 0.92);
+  color: #000;
+
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.back-button:active {
+  transform: scale(0.98);
+}

@@ -1,0 +1,152 @@
+/* =============================
+   ROOT CONTAINER
+============================= */
+.ar-menu-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 60px 20px 40px;
+  background-color: #f5f5f5;
+}
+
+
+/* =============================
+   TITLE
+============================= */
+.ar-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+
+/* =============================
+   SECTION CARDS
+============================= */
+.menu-section {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 25px;
+
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* =============================
+   PRIMARY BUTTONS
+============================= */
+.menu-btn {
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 10px;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: #007bff;
+  color: white;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.menu-btn:hover {
+  background-color: #0056b3;
+}
+
+.menu-btn:active {
+  transform: scale(0.98);
+}
+
+
+/* =============================
+   SUBMENU (CREATE OPTIONS)
+============================= */
+.submenu {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.submenu-btn {
+  padding: 10px 16px;
+  font-size: 14px;
+
+  border: none;
+  border-radius: 6px;
+
+  background-color: #2a5eec;
+  color: white;
+
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.submenu-btn:hover {
+  background-color: #294ef1;
+}
+
+
+/* =============================
+   STATUS TEXT
+============================= */
+.status-text {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+}
+
+
+/* =============================
+   MODE PLACEHOLDER
+============================= */
+.mode-placeholder {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 20px;
+  color: #444;
+}
+
+
+/* =============================
+   BACK BUTTON
+============================= */
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  padding: 8px 14px;
+  font-size: 14px;
+
+  border: none;
+  border-radius: 6px;
+
+  background-color: #444;
+  color: white;
+
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.back-btn:hover {
+  background-color: #222;
+}

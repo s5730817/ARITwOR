@@ -1,0 +1,33 @@
+/* -----------------------------
+   Map List
+----------------------------- */
+.map-list {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.map-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.map-item:hover {
+  background-color: #f0f4ff;
+}
+
+.map-item input[type="checkbox"] {
+  cursor: pointer;
+}

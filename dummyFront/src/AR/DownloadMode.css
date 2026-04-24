@@ -1,0 +1,261 @@
+/* =============================
+   ROOT CONTAINER (match menu)
+============================= */
+.download-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-height: 100vh;
+  padding: 60px 20px 40px;
+
+  background-color: #f5f5f5;
+}
+
+
+/* =============================
+   TITLE
+============================= */
+.download-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+
+/* =============================
+   TOP BAR
+============================= */
+.top-bar {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+
+/* =============================
+   BACK BUTTON (TOP RIGHT)
+============================= */
+.back-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  padding: 8px 14px;
+  font-size: 14px;
+
+  border: none;
+  border-radius: 6px;
+
+  background-color: #444;
+  color: white;
+
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.back-btn:hover {
+  background-color: #222;
+}
+
+
+/* =============================
+   LIST
+============================= */
+.download-list {
+  width: 100%;
+  max-width: 500px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+/* =============================
+   CARD (match menu-section)
+============================= */
+.download-card {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* =============================
+   TEXT
+============================= */
+.download-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.download-info strong {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.download-info span {
+  font-size: 13px;
+  color: #666;
+}
+
+
+/* =============================
+   ANNOTATION STATUS
+============================= */
+.annotation-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+/* RED "no annotations" icon */
+.no-annotations-icon {
+  width: 14px;
+  height: 14px;
+  border: 2px solid red;
+  border-radius: 50%;
+  position: relative;
+}
+
+.no-annotations-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 2px;
+  background: red;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* Text */
+.no-annotations-text {
+  color: red;
+  font-weight: 500;
+}
+
+
+/* =============================
+   BUTTON (match menu-btn)
+============================= */
+.download-btn {
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: #007bff;
+  color: white;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
+
+.download-btn:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+
+/* =============================
+   STATUS TEXT
+============================= */
+.status-text {
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+}
+
+/* =============================
+   WIPE BUTTON
+============================= */
+.wipe-btn {
+  margin-top: 30px; /* pushes it lower */
+
+  padding: 12px 18px;
+  font-size: 14px;
+  font-weight: 600;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: #dc3545; /* red */
+  color: white;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.wipe-btn:hover {
+  background-color: #b02a37;
+}
+
+
+/* =============================
+   CONFIRM BOX
+============================= */
+.wipe-confirm {
+  margin-top: 20px;
+
+  padding: 16px;
+  border-radius: 10px;
+
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  text-align: center;
+}
+
+.confirm-btn {
+  margin-top: 10px;
+  margin-right: 10px;
+
+  padding: 10px 14px;
+
+  border: none;
+  border-radius: 6px;
+
+  background-color: #dc3545;
+  color: white;
+  cursor: pointer;
+}
+
+.confirm-btn:hover {
+  background-color: #b02a37;
+}
+
+.cancel-btn {
+  padding: 10px 14px;
+
+  border: none;
+  border-radius: 6px;
+
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  background-color: #aaa;
+}

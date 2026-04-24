@@ -1,0 +1,58 @@
+{
+  "id": "c4935cd2-dba9-4778-b6bf-abd68d37c808",
+  "featureMapId": "fm_f9f60ba2-87b9-4391-9907-4699a0ab83bd",
+  "entityId": null,
+  "createdAt": "2026-04-24T08:49:59.453Z",
+  "updatedAt": "2026-04-24T08:49:58.998Z",
+  "annotationCount": 2,
+  "annotations": [
+    {
+      "id": 1777016429409,
+      "mapX": 576.6762142736865,
+      "mapY": 936.2989386281341,
+      "featureId": "d_1736",
+      "offsetX": 17.95618253540522,
+      "offsetY": -14.101085785928376,
+      "title": "Test 1",
+      "note": "Note 1",
+      "done": true,
+      "colour": "#00ff88",
+      "inspectionNote": "Yep",
+      "status": "checked",
+      "inspectionResult": "functional",
+      "updatedAt": "2026-04-24T08:49:25.455Z"
+    },
+    {
+      "id": 1777016441123,
+      "mapX": 493.6219660828304,
+      "mapY": 740.1486202772261,
+      "featureId": "d_2031",
+      "offsetX": -9.378033917169603,
+      "offsetY": 13.148620277226087,
+      "title": "Test 2",
+      "note": "Note 2",
+      "done": true,
+      "colour": "#ff9f1c",
+      "inspectionNote": "Nope",
+      "status": "checked",
+      "inspectionResult": "defective",
+      "updatedAt": "2026-04-24T08:49:37.793Z"
+    }
+  ],
+  "inspections": [
+    {
+      "id": "6326d7b3-3c37-49a5-9491-9c92e339747e",
+      "mapX": 878.3293822899121,
+      "mapY": 735.7791137600641,
+      "featureId": null,
+      "offsetX": 0,
+      "offsetY": 0,
+      "title": "This",
+      "note": "",
+      "inspectionNote": "Nope nope",
+      "inspectionResult": "defective",
+      "status": "pending",
+      "createdAt": "2026-04-24T08:49:42.002Z"
+    }
+  ]
+}

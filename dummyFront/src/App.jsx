@@ -1,10 +1,10 @@
 import React from "react";
-import ARImageCapture from "./AR/ARImageCapture";
+import ARController from "./AR/ARController";
 
 function App() {
   return (
     <div className="app-container">
-      <ARImageCapture />
+      <ARController />
     </div>
   );
 }

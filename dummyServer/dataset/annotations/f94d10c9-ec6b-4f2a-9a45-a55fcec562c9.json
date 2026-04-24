@@ -1,0 +1,22 @@
+{
+  "id": "f94d10c9-ec6b-4f2a-9a45-a55fcec562c9",
+  "featureMapId": "fm_6b7c1cd3-4bdc-4999-8ab2-2afa536da183",
+  "entityId": null,
+  "createdAt": "2026-04-23T18:10:02.251Z",
+  "updatedAt": "2026-04-23T18:09:58.060Z",
+  "annotationCount": 1,
+  "annotations": [
+    {
+      "id": 1776967787456,
+      "mapX": 609.5104237289073,
+      "mapY": 921.9862950858331,
+      "featureId": "d_514",
+      "offsetX": 5.510423728907313,
+      "offsetY": 5.986295085833149,
+      "title": "Lfhxlhfhfoyofyofy",
+      "note": "Hpxoyfdyofoy",
+      "done": true,
+      "colour": "#00ff88"
+    }
+  ]
+}

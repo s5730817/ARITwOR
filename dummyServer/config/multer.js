@@ -5,7 +5,7 @@ import fs from "fs";
 const storage = multer.diskStorage({
 
   destination: (req, file, cb) => {
-    const session = req.body.sessionName || "unknown_session";
+    const session = req.body.sessionId || "unknown_session";
     const objectType = req.body.objectType || "unknown_type";
 
     const dir = path.join(process.cwd(), "dataset", session, objectType);

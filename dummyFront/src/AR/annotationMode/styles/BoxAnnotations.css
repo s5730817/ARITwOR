@@ -1,0 +1,269 @@
+.box-annotations {
+  position: relative;
+  z-index: 20;
+
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+
+  gap: 10px;
+  padding: 12px;
+
+  background: linear-gradient(
+    to top,
+    rgba(10, 10, 10, 0.92),
+    rgba(10, 10, 10, 0.82)
+  );
+
+  backdrop-filter: blur(8px);
+  box-sizing: border-box;
+}
+
+/* ------------------ */
+/* HEADER             */
+/* ------------------ */
+.box-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.box-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.box-header span {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+/* ------------------ */
+/* LIST (SCROLLABLE)  */
+/* ------------------ */
+.box-list {
+  flex: 1;
+  min-height: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+
+  padding-right: 4px;
+  padding-bottom: 12px;
+}
+
+.box-empty {
+  padding: 14px;
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.82);
+
+  text-align: center;
+  font-size: 14px;
+}
+
+/* ------------------ */
+/* ITEM CARD          */
+/* ------------------ */
+.box-item {
+  --accent-colour: #00ff88;
+
+  position: relative;
+  flex-shrink: 0;
+
+  border: 2px solid rgba(255, 255, 255, 0.12);
+  border-left: 5px solid var(--accent-colour);
+  border-radius: 16px;
+
+  background: rgba(22, 22, 22, 0.92);
+  overflow: hidden;
+
+  transition:
+    border-color 0.18s ease,
+    box-shadow 0.18s ease,
+    transform 0.18s ease;
+}
+
+.box-item::before {
+  content: "";
+  display: block;
+  height: 4px;
+  background: var(--accent-colour);
+}
+
+.box-item.selected {
+  border-color: var(--accent-colour);
+  box-shadow:
+    0 0 0 1px var(--accent-colour),
+    0 8px 24px rgba(0, 0, 0, 0.28);
+}
+
+.box-item.done {
+  opacity: 0.9;
+}
+
+/* ------------------ */
+/* ROW                */
+/* ------------------ */
+.box-row {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+  padding: 12px 14px;
+
+  border: none;
+  background: transparent;
+
+  color: #ffffff;
+  text-align: left;
+  cursor: pointer;
+}
+
+.box-item-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.box-number {
+  width: 28px;
+  height: 28px;
+
+  border-radius: 999px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--accent-colour);
+  color: #111111;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  flex-shrink: 0;
+}
+
+.box-meta {
+  min-width: 0;
+}
+
+.box-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.box-sub {
+  margin-top: 2px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.box-status {
+  font-size: 18px;
+  color: var(--accent-colour);
+  flex-shrink: 0;
+}
+
+/* ------------------ */
+/* DETAIL PANEL       */
+/* ------------------ */
+.box-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding: 0 14px 14px;
+}
+
+/* ------------------ */
+/* INPUTS             */
+/* ------------------ */
+.box-input,
+.box-textarea {
+  width: 100%;
+
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+
+  padding: 10px 12px;
+
+  font-size: 14px;
+  font-family: inherit;
+
+  box-sizing: border-box;
+  outline: none;
+}
+
+.box-input::placeholder,
+.box-textarea::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.box-input:focus,
+.box-textarea:focus {
+  border-color: var(--accent-colour);
+  box-shadow: 0 0 0 1px var(--accent-colour);
+}
+
+.box-textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* ------------------ */
+/* ACTION BUTTONS     */
+/* ------------------ */
+.box-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.box-btn {
+  flex: 1;
+
+  border: none;
+  border-radius: 12px;
+
+  padding: 10px 12px;
+
+  background: var(--accent-colour);
+  color: #111111;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.box-btn.danger {
+  background: rgba(255, 77, 109, 0.18);
+  color: #ff8b9f;
+  border: 1px solid rgba(255, 77, 109, 0.35);
+}
