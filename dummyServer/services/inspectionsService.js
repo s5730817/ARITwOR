@@ -34,6 +34,7 @@ const BASE_DIR = path.join(__dirname, "../dataset/inspections");
  *   id: string,                 // UUID (PRIMARY KEY)
  *   featureMapId: string,       // FK → feature_maps.id (INDEX THIS)
  *   entityId: string|null,      // FK → entity.id (optional)
+ *  
  *
  *   createdAt: string,          // ISO timestamp
  *   updatedAt: string,          // ISO timestamp
